@@ -1,0 +1,15 @@
+{
+  "name": "10pearls",
+  "version": "1.0.0",
+  "description": "10Pearls test",
+  "main": "index.html",
+  "repository": "git@github.com:alejomejia/10Pearls.git",
+  "author": "Alejandro Mejia <alejomejiacuartas@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
