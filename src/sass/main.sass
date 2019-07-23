@@ -1,2 +1,15 @@
-body
-  color: red
+/* Import Config */
+@import 'config/variables'
+@import 'config/mixins'
+@import 'config/utilities'
+
+/* Import Structure */
+@import 'structure/nav'
+@import 'structure/content'
+
+// General
+
+@media #{$break-tablet}
+  .container
+    max-width: 100%
+
