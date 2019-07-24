@@ -1,0 +1,52 @@
+#site-footer
+  border-top: 5px solid $main-color
+
+  .footer-top
+    color: #bbb
+    padding: 80px 0
+    background-color: $black
+    
+  .footer-bottom
+    color: #999
+    padding: 20px 0
+    background: #2a2a2a
+    border-top: 1px solid #444
+
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+
+      .footer-nav
+
+        &-items
+          display: flex
+          list-style: none
+          margin: 0
+          padding: 0
+
+        &-item
+          border-right: 1px solid #999
+
+          &:last-child
+            border-right: 0
+        
+          .link
+            color: #999
+            padding: 0 10px
+            text-transform: uppercase
+            @include transition
+
+            &:hover
+              color: #fff
+
+            &.faq
+              text-transform: inherit
+            &.donate
+              color: $green
+              &:hover
+                color: $green-light
+
+
+    p
+      margin-bottom: 0
