@@ -4,6 +4,9 @@
   background: $main-color
   border-bottom: 7px solid rgba(#fff , 0.4)
 
+  @media #{$break-phone}
+    padding: 29px 0 22px 0
+
   &-wrapper
     width: 100%
   
@@ -17,6 +20,10 @@
     text-transform: uppercase
     margin-bottom: 0
 
+    @media #{$break-phone}
+      font-size: 30px
+      line-height: 30px
+
     &:after
       content: ''
       position: absolute
@@ -27,3 +34,6 @@
       left: 0
       border-left: 2px solid $main-color
       border-right: 2px solid $main-color
+
+      @media #{$break-phone}
+        bottom: -31px
