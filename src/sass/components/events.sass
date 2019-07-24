@@ -68,3 +68,16 @@
         color: #666
         font-weight: 300
         margin-bottom: 0
+
+    &-view-more
+      display: none
+      margin-top: 5px
+      font-weight: 600
+      color: #666
+      @include transition
+
+      &:hover
+        color: $main-color
+
+      @media #{$break-tablet}
+        display: inline-block
