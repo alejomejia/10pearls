@@ -1,0 +1,30 @@
+.jumbotron
+  display: flex
+  align-items: center
+  min-height: 550px
+  background: $main-color
+  border-radius: 0
+
+  @media #{$break-phone}
+    min-height: 450px
+
+  h1
+    display: inline-block
+    @include jumbotron-dark-bg
+
+  p
+    max-width: 590px
+    @include jumbotron-dark-bg
+
+  .btn
+    font-family: $main-font
+    font-size: 14px
+    font-weight: 700
+    background: $black
+    color: #fff
+    padding: 8px 27px
+    text-transform: capitalize
+
+    &:hover
+      background: $black-light
+
