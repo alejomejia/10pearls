@@ -5,6 +5,84 @@
     color: #bbb
     padding: 80px 0
     background-color: $black
+
+    &-title
+      font-size: 18px
+      color: #fff
+      text-transform: uppercase
+      display: inline-block
+      border-bottom: 4px solid $main-color
+      padding-bottom: 15px
+      margin-bottom: 30px
+
+    &-social
+
+      .social-link
+        display: inline-block
+        color: $black
+        background-color: $main-color-dark
+        width: 30px
+        height: 30px
+        line-height: 30px
+        text-align: center
+        margin-right: 5px
+        border-radius: 50%
+        font-size: 21px
+        @include transition
+
+        &:hover
+          background-color: $main-color
+
+    &-latest-news
+
+        .news-item
+          display: grid
+          grid-template-columns: 35% calc(65% - 20px)
+          grid-column-gap: 20px
+
+          p
+            margin-bottom: 0
+        
+          &:first-child
+            margin-bottom: 20px
+            border-bottom: 1px solid #393939
+            padding-bottom: 20px
+
+          &-image
+            margin: 0
+
+    &-flickr-grid
+      display: grid
+      grid-template-columns: calc(33% - 4px) calc(33% - 4px) calc(33% - 4px)
+      grid-gap: 8px
+
+    &-tweets-grid
+
+      .tweet
+        display: grid
+        grid-template-columns: 20% 80%
+        
+        &:first-child
+          margin-bottom: 20px
+
+        &-icon
+          color: $red
+          font-size: 30px
+
+        &-text
+
+          p
+            margin-bottom: 5px
+
+          .tweeter-name
+            color: $red
+            font-style: italic
+            text-transform: uppercase
+          
+          .tweeter-time
+            color: #666
+
+
     
   .footer-bottom
     color: #999
