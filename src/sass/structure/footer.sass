@@ -6,6 +6,10 @@
     padding: 80px 0
     background-color: $black
 
+    @media #{$break-phone}
+      padding: 40px 0
+      text-align: center
+
     &-title
       font-size: 18px
       color: #fff
@@ -15,7 +19,17 @@
       padding-bottom: 15px
       margin-bottom: 30px
 
+    .about-text
+      margin-bottom: 40px
+
+      @media #{$break-phone}
+        padding: 0 30px
+        margin-bottom: 15px
+
     &-social
+
+      @media #{$break-phone}
+        margin-bottom: 30px
 
       .social-link
         display: inline-block
@@ -34,33 +48,55 @@
           background-color: $main-color
 
     &-latest-news
+      @media #{$break-phone}
+        margin-bottom: 30px
 
-        .news-item
-          display: grid
-          grid-template-columns: 35% calc(65% - 20px)
-          grid-column-gap: 20px
+      .news-item
+        display: grid
+        grid-template-columns: 35% calc(65% - 20px)
+        grid-column-gap: 20px
 
-          p
-            margin-bottom: 0
-        
-          &:first-child
-            margin-bottom: 20px
-            border-bottom: 1px solid #393939
-            padding-bottom: 20px
+        @media #{$break-tablet}
+          grid-template-columns: 100%
+          grid-column-gap: inherit
 
-          &-image
-            margin: 0
+        p
+          margin-bottom: 0
+      
+        &:first-child
+          margin-bottom: 20px
+          border-bottom: 1px solid #393939
+          padding-bottom: 20px
+
+        &-image
+          margin: 0
+
+          @media #{$break-tablet}
+            margin-bottom: 10px
 
     &-flickr-grid
       display: grid
       grid-template-columns: calc(33% - 4px) calc(33% - 4px) calc(33% - 4px)
       grid-gap: 8px
 
+      @media #{$break-tablet}
+        grid-template-columns: 50% 50%
+
+      @media #{$break-phone}
+        grid-template-columns: repeat(3,1fr)
+        margin-bottom: 30px
+
+      .flickr-link
+        display: block
+
     &-tweets-grid
 
       .tweet
         display: grid
         grid-template-columns: 20% 80%
+
+        @media #{$break-tablet}
+          grid-template-columns: 100%
         
         &:first-child
           margin-bottom: 20px
@@ -68,6 +104,9 @@
         &-icon
           color: $red
           font-size: 30px
+
+          @media #{$break-tablet}
+            margin-bottom: 10px
 
         &-text
 
