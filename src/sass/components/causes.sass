@@ -1,0 +1,93 @@
+.causes
+  padding: 100px 0
+  background-color: $gray
+  text-align: center
+  position: relative
+  margin-bottom: 20px
+
+  @media #{$break-phone}
+    padding: 50px 0
+    margin-bottom: 0
+
+  &:before
+    content: ''
+    position: absolute
+    top: 210px
+    left: 0
+    right: 0
+    border-top: 1px solid #dfdfe1
+    border-bottom: 1px solid #fff
+
+    @media #{$break-phone}
+      top: 160px
+
+  &-col
+    @media #{$break-phone}
+      margin-bottom: 30px
+
+    &:last-child
+      margin-bottom: 0
+
+  &-link
+    display: block
+    color: #666
+    position: relative
+
+    &:hover
+      color: #666
+
+      &:after
+        background-color: $main-color
+        @include rotate(180deg)
+
+      .causes-title
+        color: $main-color
+
+    &:after
+      content: '\f067'
+      font: normal normal normal 14px/1 FontAwesome
+      color: #fff
+      border: 3px solid #fff
+      position: absolute
+      left: calc(50% - 20px)
+      bottom: -120px
+      width: 40px
+      height: 40px
+      line-height: 37px
+      border-radius: 50%
+      background-color: $gray
+      @include rotate(0deg)
+      @include transition
+
+      @media #{$break-phone}
+        display: none
+
+  &-image
+    border-radius: 50%
+    margin-bottom: 20px
+
+  &-title
+    font-family: $main-font
+    font-weight: 600
+    font-size: 26px
+    margin-bottom: 20px
+    text-shadow: 2px 2px 0 #fff
+    text-transform: capitalize
+    @include transition
+
+  &-text
+    font-weight: 300
+    margin-bottom: 0
+
+  &-more
+    display: none
+    font-weight: 600
+    margin-top: 10px
+
+    @media #{$break-phone}
+      display: inline-block
+
+  
+
+
+  
