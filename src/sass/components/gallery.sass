@@ -1,8 +1,14 @@
 .gallery
   padding: 80px 0 100px
 
+  @media #{$break-phone}
+    padding: 50px 0
+
   &-image
     margin-bottom: 0
+    
+    @media #{$break-phone}
+      margin-bottom: 20px
 
   &-link
     position: relative
@@ -28,10 +34,6 @@
     &:hover
       &:before
         opacity: 1
-        
-
-
-
 
     img
       max-width: 100%
