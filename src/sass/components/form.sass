@@ -1,0 +1,36 @@
+.form
+
+  &-group
+    margin-bottom: 30px
+
+  label
+    color: #666
+    font-weight: 600
+    cursor: pointer
+
+    small
+      color: #999
+      font-size: 12px
+
+  input,
+  textarea
+    background-color: #f9f9f9
+    border: 1px solid #ebebeb
+    border-radius: 0
+
+  button
+    color: #fff
+    font-size: 14px
+    font-weight: 700
+    text-transform: capitalize
+    background-color: $main-color
+    margin-top: 30px
+    border: 0
+    border-bottom: 3px solid $main-color-dark
+    border-radius: 3px
+    padding: .5em 1em
+    @include transition
+
+    &:hover
+      background: $main-color-light
+
