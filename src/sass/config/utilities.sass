@@ -1,3 +1,5 @@
+// Titles with view more
+  
 .title-with-line
   position: relative
   margin-bottom: 25px
@@ -39,7 +41,11 @@
     &:hover
       background-color: $main-color
 
+// Contact page
+
 .contact-content
+  margin-bottom: 40px
+  
   h2,
   h3
     font-size: 16px
@@ -47,3 +53,35 @@
     color: #666
     text-transform: uppercase
     margin-bottom: 30px
+
+// Social icons
+
+.social
+
+  @media #{$break-phone}
+    margin-bottom: 30px
+
+  &-link
+    display: inline-block
+    color: #fff
+    background-color: $main-color
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    margin-right: 5px
+    border-radius: 50%
+    font-size: 21px
+    @include transition
+
+    &:hover
+      color: #fff
+      background-color: $main-color-light
+
+  &.dark
+    .social-link
+      background-color: $main-color
+
+      &:hover
+        color: $black
+        background-color: $main-color-light
