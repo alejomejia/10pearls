@@ -13,6 +13,10 @@
 
         .news-title
           margin-bottom: 15px
+
+        .news-wrapper
+          @media #{$break-phone}
+            align-self: center
     
   &-image
     &-link
@@ -41,3 +45,15 @@
     color: #666
     font-weight: 300
     margin-bottom: 0
+
+  &-view-more
+    display: none
+    font-weight: 600
+    color: #666
+    @include transition
+
+    &:hover
+      color: $main-color
+
+    @media #{$break-tablet}
+      display: inline-block
