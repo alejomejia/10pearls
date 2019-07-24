@@ -1,0 +1,60 @@
+.slider
+  // display: flex
+  // align-items: center
+  // min-height: 550px
+  background-color: $main-color
+  border-radius: 0
+  margin-bottom: 0
+
+  // Owl styling
+  .owl-carousel
+
+    .owl-dots
+      position: absolute
+      bottom: 30px
+      right: 0
+      left: 0
+
+      .owl-dot
+        &.active
+          span
+            background: $main-color
+
+  .slide
+    display: flex
+    align-items: center
+    min-height: 550px
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+    &.item1
+      background-image: url('http://picsum.photos/1920/550')
+    &.item2
+      background-image: url('http://picsum.photos/1921/550')
+    &.item3
+      background-image: url('http://picsum.photos/1919/550')
+
+  @media #{$break-tablet}
+    min-height: 450px
+
+  h1
+    display: inline-block
+    @include jumbotron-dark-bg
+
+  p
+    max-width: 590px
+    @include jumbotron-dark-bg
+
+  .btn
+    font-family: $main-font
+    font-size: 14px
+    font-weight: 700
+    background: $black
+    color: #fff
+    padding: 8px 20px
+    text-transform: capitalize
+
+    &:hover
+      background: $main-color
+
