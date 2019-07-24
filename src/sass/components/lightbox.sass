@@ -1,0 +1,15 @@
+.ekko-lightbox
+
+  // Force modal sizes
+  .modal-dialog
+    max-width: 740px !important
+  &-container
+    max-height: 520px !important
+
+  // Force display of nav arrows
+  &-nav-overlay
+    display: flex !important
+
+    a
+      @media #{$break-tablet}
+        opacity: 1

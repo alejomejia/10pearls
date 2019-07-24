@@ -1,0 +1,40 @@
+.title-with-line
+  position: relative
+  margin-bottom: 25px
+  border-bottom: 7px solid rgba($main-color, 0.6)
+
+  .text
+    position: relative
+    display: inline-block
+    font-size: 24px
+    line-height: 24px
+    font-weight: 600
+    color: $black
+    text-transform: uppercase
+    margin-bottom: 10px
+
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: -17px
+      height: 7px
+      background: $main-color
+      border-right: 1px solid #fff
+
+  .view-more
+    display: inline-block
+    width: 26px
+    height: 26px
+    line-height: 26px
+    padding: 0 5px
+    margin-left: 10px
+    color: #fff
+    background: $gray
+    border-radius: 50%
+    position: absolute
+    @include transition
+
+    &:hover
+      background-color: $main-color
