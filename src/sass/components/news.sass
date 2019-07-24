@@ -1,0 +1,43 @@
+.news
+
+  &-article
+    margin-bottom: 40px
+
+    // Grid
+    &:not(.featured)
+
+      .news-grid
+        display: grid
+        grid-template-columns: 30% calc(70% - 20px)
+        grid-column-gap: 20px
+
+        .news-title
+          margin-bottom: 15px
+    
+  &-image
+    &-link
+      display: block
+
+  &-title
+
+    h3
+      font-size: 18px
+      line-height: 23px
+      font-weight: 600
+      margin-bottom: 5px
+
+    &-link
+      color: #000
+      @include transition
+      &:hover
+        color: $main-color
+
+  &-meta
+    font-size: 12px
+    color: #666
+    margin-bottom: 15px
+
+  &-description
+    color: #666
+    font-weight: 300
+    margin-bottom: 0
