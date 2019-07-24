@@ -1,0 +1,29 @@
+.page-title
+  display: flex
+  padding: 49px 0 42px 0
+  background: $main-color
+  border-bottom: 7px solid rgba(#fff , 0.4)
+
+  &-wrapper
+    width: 100%
+  
+  &-text
+    position: relative
+    display: inline-block
+    font-size: 40px
+    line-height: 40px
+    font-weight: 600
+    color: #fff
+    text-transform: uppercase
+    margin-bottom: 0
+
+    &:after
+      content: ''
+      position: absolute
+      height: 7px
+      width: 100%
+      background: rgba(0, 0, 0, 0.2)
+      bottom: -50px
+      left: 0
+      border-left: 2px solid $main-color
+      border-right: 2px solid $main-color
