@@ -1,0 +1,184 @@
+#site-footer
+  border-top: 5px solid $main-color
+
+  .footer-top
+    color: #bbb
+    padding: 80px 0
+    background-color: $black
+
+    @media #{$break-phone}
+      padding: 40px 0
+      text-align: center
+
+    &-title
+      font-size: 18px
+      color: #fff
+      text-transform: uppercase
+      display: inline-block
+      border-bottom: 4px solid $main-color
+      padding-bottom: 15px
+      margin-bottom: 30px
+
+    .about-text
+      margin-bottom: 40px
+
+      @media #{$break-phone}
+        padding: 0 30px
+        margin-bottom: 15px
+
+    &-social
+
+      @media #{$break-phone}
+        margin-bottom: 30px
+
+      .social-link
+        display: inline-block
+        color: $black
+        background-color: $main-color-dark
+        width: 30px
+        height: 30px
+        line-height: 30px
+        text-align: center
+        margin-right: 5px
+        border-radius: 50%
+        font-size: 21px
+        @include transition
+
+        &:hover
+          background-color: $main-color
+
+    &-latest-news
+      @media #{$break-phone}
+        margin-bottom: 30px
+
+      .news-item
+        display: grid
+        grid-template-columns: 35% calc(65% - 20px)
+        grid-column-gap: 20px
+
+        @media #{$break-tablet}
+          grid-template-columns: 100%
+          grid-column-gap: inherit
+
+        p
+          margin-bottom: 0
+      
+        &:first-child
+          margin-bottom: 20px
+          border-bottom: 1px solid #393939
+          padding-bottom: 20px
+
+        &-image
+          margin: 0
+
+          @media #{$break-tablet}
+            margin-bottom: 10px
+
+    &-flickr-grid
+      display: grid
+      grid-template-columns: calc(33% - 4px) calc(33% - 4px) calc(33% - 4px)
+      grid-gap: 8px
+
+      @media #{$break-tablet}
+        grid-template-columns: 50% 50%
+
+      @media #{$break-phone}
+        grid-template-columns: repeat(3,1fr)
+        margin-bottom: 30px
+
+      .flickr-link
+        display: block
+
+    &-tweets-grid
+
+      .tweet
+        display: grid
+        grid-template-columns: 20% 80%
+
+        @media #{$break-tablet}
+          grid-template-columns: 100%
+        
+        &:first-child
+          margin-bottom: 20px
+
+        &-icon
+          color: $red
+          font-size: 30px
+
+          @media #{$break-tablet}
+            margin-bottom: 10px
+
+        &-text
+
+          p
+            margin-bottom: 5px
+
+          .tweeter-name
+            color: $red
+            font-style: italic
+            text-transform: uppercase
+          
+          .tweeter-time
+            color: #666
+
+
+    
+  .footer-bottom
+    color: #999
+    padding: 20px 0
+    background: #2a2a2a
+    border-top: 1px solid #444
+
+    @media #{$break-tablet}
+      padding: 20px
+
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+
+      @media #{$break-phone}
+        display: inherit
+        justify-content: inherit
+
+      .copyright
+        @media #{$break-phone}
+          margin-bottom: 10px
+          text-align: center
+
+      .footer-nav
+
+        &-items
+          display: flex
+          list-style: none
+          margin: 0
+          padding: 0
+
+          @media #{$break-phone}
+            justify-content: center
+
+        &-item
+          border-right: 1px solid #999
+
+          &:last-child
+            border-right: 0
+        
+          .link
+            color: #999
+            padding: 0 10px
+            text-transform: uppercase
+            @include transition
+
+            &:hover
+              color: #fff
+
+            &.faq
+              text-transform: inherit
+            &.donate
+              color: $green
+              &:hover
+                color: $green-light
+
+
+    p
+      margin-bottom: 0
