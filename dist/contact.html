@@ -7,8 +7,6 @@
   <title>Global Awareness - Contact</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-  <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
   <link href="main.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -83,267 +81,132 @@
   </section>
 
   <!-- Form + Contact Info -->
-  <section>
+  <section class="contact-content">
     <div class="container">
       <div class="row">
         <!-- Form -->
         <div class="col-md-8">
           <div class="form">
             <div class="title">
-              <h3>Keep in touch</h3>
-              <a class="view-more" href="#"><i class="fa fa-th"></i></a>
+              <h2>Keep in touch</h2>
             </div>
-            <article class="event-article featured">
-              <figure class="event-image">
-                <a class="event-image-link" href="#">
-                  <img src="http://picsum.photos/770/285" class="img-fluid" alt="event image" />    
-                </a>
-              </figure>
-              <div class="event-body">
-                <div class="event-date">
-                  <span class="month">Jun</span>
-                  <span class="day">14th</span>
+            <form id="contact-form">
+              <div class="form-group">
+                <div class="container p-0">
+                  <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="name">Your name <small>(required)</small></label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="email">Email <small>(required)</small></label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="subject">Subject <small>(required)</small></label>
+                      <input type="text" class="form-control" id="subject">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="message">Message <small>(required)</small></label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                      <button type="submit">Send message</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="event-content">
-                  <div class="event-title">
-                    <h3>
-                      <a href="#" class="event-title-link">
-                        Contrary to popular belief, Lorem Ipsum
-                      </a>
-                    </h3>
-                  </div>
-                  <div class="event-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore facere laborum voluptate?</p>
-                    <a class="event-view-more" href="#">Read more</a>
-                  </div>
-                </div>
               </div>
-            </article>
-            <div class="row">
-              <div class="col-md-6">
-                <article class="event-article">
-                  <figure class="event-image">
-                    <a class="event-image-link" href="#">
-                  <img src="http://picsum.photos/740/370" class="img-fluid" alt="event image" />    
-                    </a>
-                  </figure>
-                  <div class="event-body">
-                    <div class="event-date">
-                      <span class="month">Jun</span>
-                      <span class="day">14th</span>
-                    </div>
-                    <div class="event-content">
-                      <div class="event-title">
-                        <h3>
-                          <a href="#" class="event-title-link">
-                            Contrary to popular belief, Lorem Ipsum
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="event-description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem</p>
-                        <a class="event-view-more" href="#">Read more</a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="event-article">
-                  <figure class="event-image">
-                    <a class="event-image-link" href="#">
-                      <img src="http://picsum.photos/740/370" class="img-fluid" alt="event image" />    
-                    </a>
-                  </figure>
-                  <div class="event-body">
-                    <div class="event-date">
-                      <span class="month">Jun</span>
-                      <span class="day">14th</span>
-                    </div>
-                    <div class="event-content">
-                      <div class="event-title">
-                        <h3>
-                          <a href="#" class="event-title-link">
-                            Contrary to popular belief, Lorem Ipsum
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="event-description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem</p>
-                        <a class="event-view-more" href="#">Read more</a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-        <!-- News Sidebar -->
+        <!-- Contact Info -->
         <div class="col-md-4">
-          <aside class="news">
-            <div class="title-with-line">
-              <h3 class="text">Latest news</h3>
-              <a class="view-more" href="#"><i class="fa fa-th"></i></a>
-            </div>
-            <article class="news-article featured">
-              <div class="news-grid">
-                <div class="news-wrapper">
-                  <figure class="news-image">
-                    <a class="news-image-link" href="#">
-                      <img src="http://picsum.photos/740/350" class="img-fluid" alt="news image" />    
-                    </a>
-                  </figure>
+          <aside class="contact-info">
+              <div class="title-with-line">
+                  <h3 class="text">Latest news</h3>
+                  <a class="view-more" href="#"><i class="fa fa-th"></i></a>
                 </div>
-                <div class="news-wrapper">
-                  <div class="news-title">
-                    <h3>
-                      <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum is not simply random</a>
-                    </h3>
+                <article class="news-article featured">
+                  <div class="news-grid">
+                    <div class="news-wrapper">
+                      <figure class="news-image">
+                        <a class="news-image-link" href="#">
+                          <img src="http://picsum.photos/740/350" class="img-fluid" alt="news image" />    
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="news-wrapper">
+                      <div class="news-title">
+                        <h3>
+                          <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum is not simply random</a>
+                        </h3>
+                      </div>
+                      <div class="news-meta">
+                        <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                      </div>
+                    </div> 
                   </div>
-                  <div class="news-meta">
-                    <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                  <div class="news-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
+                    <a class="news-view-more" href="#">Read more</a>
                   </div>
-                </div> 
-              </div>
-              <div class="news-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
-                <a class="news-view-more" href="#">Read more</a>
-              </div>
-            </article>
-            <article class="news-article">
-              <div class="news-grid">
-                <div class="news-wrapper">
-                  <figure class="news-image">
-                    <a class="news-image-link" href="#">
-                      <img src="http://picsum.photos/200/190" class="img-fluid" alt="news image" />    
-                    </a>
-                  </figure>
-                </div>
-                <div class="news-wrapper">
-                  <div class="news-title">
-                    <h3>
-                      <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum</a>
-                    </h3>
+                </article>
+                <article class="news-article">
+                  <div class="news-grid">
+                    <div class="news-wrapper">
+                      <figure class="news-image">
+                        <a class="news-image-link" href="#">
+                          <img src="http://picsum.photos/200/190" class="img-fluid" alt="news image" />    
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="news-wrapper">
+                      <div class="news-title">
+                        <h3>
+                          <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum</a>
+                        </h3>
+                      </div>
+                      <div class="news-meta">
+                        <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                      </div>
+                    </div> 
                   </div>
-                  <div class="news-meta">
-                    <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                  <div class="news-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
+                    <a class="news-view-more" href="#">Read more</a>
                   </div>
-                </div> 
-              </div>
-              <div class="news-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
-                <a class="news-view-more" href="#">Read more</a>
-              </div>
-            </article>
-            <article class="news-article">
-              <div class="news-grid">
-                <div class="news-wrapper">
-                  <figure class="news-image">
-                    <a class="news-image-link" href="#">
-                      <img src="http://picsum.photos/200/190" class="img-fluid" alt="news image" />    
-                    </a>
-                  </figure>
-                </div>
-                <div class="news-wrapper">
-                  <div class="news-title">
-                    <h3>
-                      <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum</a>
-                    </h3>
+                </article>
+                <article class="news-article">
+                  <div class="news-grid">
+                    <div class="news-wrapper">
+                      <figure class="news-image">
+                        <a class="news-image-link" href="#">
+                          <img src="http://picsum.photos/200/190" class="img-fluid" alt="news image" />    
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="news-wrapper">
+                      <div class="news-title">
+                        <h3>
+                          <a href="#" class="news-title-link">Contrary to popular belief, Lorem Ipsum</a>
+                        </h3>
+                      </div>
+                      <div class="news-meta">
+                        <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                      </div>
+                    </div> 
                   </div>
-                  <div class="news-meta">
-                    <span class="date">31 Nov, 2020</span> | <span class="comments">3 comments</span>
+                  <div class="news-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
+                    <a class="news-view-more" href="#">Read more</a>
                   </div>
-                </div> 
-              </div>
-              <div class="news-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo doloribus dolores voluptatem consectetur beatae cumque inventore</p>
-                <a class="news-view-more" href="#">Read more</a>
-              </div>
-            </article>
+                </article>
+              
           </aside>
         </div>
+
       </div>
     </div>
-  </section>
-
-  <!-- Sponsors -->
-  <section class="sponsors">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-with-line">
-              <h3 class="text">Sponsors</h3>
-              <a class="view-more" href="#"><i class="fa fa-th"></i></a>
-            </div>
-            <div class="carousel">
-              <div class="owl-carousel owl-theme">
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-                <div class="item">
-                  <a href="#" class="carousel-link">
-                    <img src="http://picsum.photos/360/170" alt="sponsor logo" class="carousel-image"></a>
-                </div>
-              </div>
-              <div class="carousel-nav"></div>
-            </div>
-          </div>
-        </div>
-      </div>
   </section>
 
   <!-- Footer -->
@@ -487,46 +350,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- Lightbox Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-  <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  </script>
-  <!-- Carousel Scripts -->
-  <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $(".sponsors .owl-carousel").owlCarousel({
-      items: 5,
-      margin: 20,
-      center: true,
-      loop: true,
-      nav: true,
-      navContainer: '.carousel-nav',
-      navText : [
-        '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>'
-      ],
-      dots: false,
-      lazyLoad: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        767: {
-          items: 3
-        },
-        991: {
-          items: 5
-        }
-      }
-
-    });
-  });
-  </script>
   <!-- Custom Scripts -->
   <script src="main.js"></script>
   <script>
